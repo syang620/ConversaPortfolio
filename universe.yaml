@@ -1,0 +1,66 @@
+
+etf_universe:
+    equity:
+      us_broad:
+          - ticker: "SPX"
+            category: "US Large Cap"
+          - ticker: "VOO"
+            category: "US Large Cap"
+          - ticker: "QQQ"
+            category: "US Tech"
+          - ticker: "IWM"
+            category: "US Small Cap"
+
+      us_sector:
+        - ticker: "XLF"
+          category: "Financials"
+        - ticker: "XLK"
+          category: "Technology"
+        - ticker: "XLE"
+          category: "Energy"
+        - ticker: "XLV"
+          category: "Communications"
+        - ticker: "XLY"
+          category: "Consumer Discretionary"
+        - ticker: "XLP"
+          category: "Consumer Staples"
+
+      international:
+        - ticker: "EFA"
+          category: "EAFE"
+        - ticker: "EEM"
+          category: "Emerging Market"
+        - ticker: "VWO"
+          category: "Emerging Market"
+        - ticker: "VEA"
+          category: "Developed Markets Ex-US"
+
+    fixed_income:
+        - ticker: "PFF"
+          category: "Preferred"
+        - ticker: "TLT"
+          category: "Govt"
+        - ticker: "IEF"
+          category: "Govt"
+        - ticker: "HYG"
+          category: "High Yield"
+        - ticker: "JAAA"
+          category: "CLO"
+        - ticker: "LQD"
+          category: "Corp IG"
+
+  alternatives:
+    commodities:
+      - ticker: "GLD"
+        category: "Gold"
+      - ticker: "SLV"
+        category: "Silver"
+      - ticker: "DBC"
+        category: "Broad Commodities"
+    
+    real_estate:
+      - ticker: "VNQ"
+        name: "Real Estate ETF"
+        category: "REITs"
+
+

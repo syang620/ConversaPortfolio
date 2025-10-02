@@ -1,0 +1,55 @@
+conversaportfolio/
+├── config/
+│   ├── etf_universe.yaml           # ETF
+│   ├── strategy_config.yaml        # strategy
+│   └── tax_config.yaml             # tax
+│
+├── src/
+│   ├── portfolio/
+│   │   ├── manager.py              # Portfolio state
+│   │   ├── positions.py            # Position tracking
+│   │   └── transactions.py         # Transaction log
+│   │
+│   ├── optimization/
+│   │   ├── etf_optimizer.py        # ETF-specific optimization
+│   │   ├── mean_variance.py
+│   │   ├── robust_optimizer.py
+│   │   └── constraints.py
+│   │
+│   ├── signals/
+│   │   ├── signal_generator.py     # signal
+│   │   ├── momentum.py             # momentum signal
+│   │   ├── mean_reversion.py       # mean reversion
+│   │   ├── volatility.py           # vol signal
+│   │   └── composite.py            # composite signal
+│   │
+│   ├── rebalancing/
+│   │   ├── rebalancer.py           # rebalance
+│   │   ├── threshold_trigger.py    # trigger
+│   │   └── execution.py            # execution
+│   │
+│   ├── tax/
+│   │   ├── tlh_engine.py           # Tax Loss Harvesting
+│   │   ├── lot_tracker.py          # Tax lot
+│   │   └── wash_sale.py            # Wash sale
+│   │
+│   ├── data/
+│   │   ├── etf_data.py             # ETF data
+│   │   ├── universe_loader.py      # Universe
+│   │   └── market_data.py
+│   │
+│   └── llm/
+│       ├── intent_parser.py
+│       ├── signal_explainer.py     # explain signals
+│       └── tax_advisor.py          # tax advising
+│
+├── frontend/
+│   ├── pages/
+│   │   ├── 1_portfolio_builder.py  # portfolio construction
+│   │   ├── 2_signal_monitor.py     # signal monitoring
+│   │   ├── 3_rebalancing.py        # rebalance
+│   │   └── 4_tax_report.py         # tax report
+│   └── components/
+│       ├── etf_selector.py
+│       ├── signal_chart.py
+│       └── tax_viz.py
