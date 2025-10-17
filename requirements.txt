@@ -2,16 +2,16 @@
 
 # Core
 python-dotenv==1.0.0
-pyyaml==6.0.1
-numpy==1.24.3
-pandas==2.0.3
+pyyaml==6.0.3
+numpy
+pandas
 
 # Optimization
-cvxpy==1.4.1
-scipy==1.11.3
+cvxpy
+scipy
 
 # Data
-yfinance==0.2.32
+yfinance==0.2.66
 
 # API
 fastapi==0.104.1
